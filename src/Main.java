@@ -36,9 +36,14 @@ public class Main {
         }
         System.out.println("Task9");
         float salary2 = 29000;
-        for (int у = 1; у <= 12; у=у+1){
-            float y = salary2 + salary2*0.1;
-            float totalsalary = y;
-            System.out.println("Месяц "+у+" сумма накоплений равна" + totalsalary + " рублей ");}
+        float total = 0;
+        for (int у = 0; у <= 12; у++){
+            total = total + total/100;
+            total = total + salary2;
+            System.out.println("Месяц "+у+" сумма накоплений равна " + total + " рублей ");}
+        System.out.println("Task10");
+        for (int t = 1; t <= 10; t++){
+            int table = t *2;
+            System.out.println("2 * " +t + " = " + table);}
     }
 }
